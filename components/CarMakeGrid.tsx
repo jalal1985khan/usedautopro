@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const carMakes = [
   'Acura', 'Audi', 'BMW', 'Buick', 'Cadillac', 'Chevrolet', 'Chrysler', 'Dodge', 'Eagle', 'Ford',
@@ -13,7 +14,10 @@ const CarMakeGrid: React.FC = () => (
     <div className="grid grid-cols-4 md:grid-cols-8 gap-6 max-w-5xl mx-auto">
       {carMakes.map((make) => (
         <div key={make} className="flex flex-col items-center">
-          <img src={`/car-logos/${make.toLowerCase()}-logo.png`} alt={make} className="w-10 h-10 mb-2" />
+          <Image src={`/car-logos/${make.toLowerCase()}-logo.png`} alt={make} className="w-10 h-10 mb-2"
+          width={40}
+          height={40}
+          />
           <span className="text-xs text-gray-700">{make}</span>
         </div>
       ))}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const SpecialOffers: React.FC = () => (
   <section className="py-10 bg-gray-100">
@@ -6,13 +7,19 @@ const SpecialOffers: React.FC = () => (
     <div className="flex flex-col md:flex-row gap-6 justify-center">
       <div className="bg-white p-6 rounded shadow-md max-w-md flex-1">
         <h3 className="font-bold text-lg mb-2">Unlock Enhanced Performance: Engine Assembly Done Right!</h3>
-        <p className="mb-2">Elevate your vehicle's power with our meticulously crafted and quality-tested rebuilt engines. Designed for superior performance, reliability, and longevity. Each assembly is done by experts for complete confidence, reliability, and value for money.</p>
-        <img src="/engine-offer.png" alt="Engine Offer" className="w-20 mx-auto mt-4" />
+        <p className="mb-2">Elevate your vehicle&apos;s power with our meticulously crafted and quality-tested rebuilt engines. Designed for superior performance, reliability, and longevity. Each assembly is done by experts for complete confidence, reliability, and value for money.</p>
+        <Image src="/engine-offer.png" alt="Engine Offer" className="w-20 mx-auto mt-4" 
+        width={80}
+        height={80}
+        />
       </div>
       <div className="bg-white p-6 rounded shadow-md max-w-md flex-1">
         <h3 className="font-bold text-lg mb-2">Seamless Shifting: Elevate Your Drive with Our Transmission Assemblies!</h3>
-        <p className="mb-2">Upgrade your driving experience with our rigorously tested transmission assemblies. Each unit is expertly rebuilt for smooth shifting, reliability, and extended lifespan. Transform your vehicle's performance today!</p>
-        <img src="/transmission-offer.png" alt="Transmission Offer" className="w-20 mx-auto mt-4" />
+        <p className="mb-2">Upgrade your driving experience with our rigorously tested transmission assemblies. Each unit is expertly rebuilt for smooth shifting, reliability, and extended lifespan. Transform your vehicle&apos;s performance today!</p>
+        <Image src="/transmission-offer.png" alt="Transmission Offer" className="w-20 mx-auto mt-4" 
+        width={80}
+        height={80}
+        />
       </div>
     </div>
   </section>
