@@ -27,8 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-<Script src="https://analytics-iota-two.vercel.app/analytics-tracker.js"/>
-
+      <head>
+<script src="https://analytics-iota-two.vercel.app/analytics-tracker.js" async/>
+</head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
