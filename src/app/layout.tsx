@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-<script src="https://analytics-iota-two.vercel.app/analytics-tracker.js" async/>
+<script src="https://analytics-new.vercel.app/analytics-tracker.js" async/>
 </head>
 
       <body
