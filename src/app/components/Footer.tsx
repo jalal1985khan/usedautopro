@@ -17,6 +17,7 @@ const Footer: React.FC = () => (
       <div>
         <ul className="space-y-2">
           <li><a href="/privacy-policy" className="underline">Privacy Policy</a></li>
+          <li><a href="/refund-policy" className="underline">Refund Policy</a></li>
           <li>Make a Payment</li>
           <li>Submit a Ticket</li>
         </ul>
