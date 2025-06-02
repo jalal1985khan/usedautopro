@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p className="mb-4">
-          Used Recyled Auto Parts occasionally sends our customers and users of the Site announcements and updates, containing important information which we believe will be of value to them. Users of the Site can always update their personally identifying information that they have provided to Used Recyled Auto Parts by e-mailing us at sales@usedautoparts.pro
+          Used Recyled Auto Parts occasionally sends our customers and users of the Site announcements and updates, containing important information which we believe will be of value to them. Users of the Site can always update their personally identifying information that they have provided to Used Recyled Auto Parts by e-mailing us at sales@recyledautoparts.com
         </p>
       </div>
     </div>

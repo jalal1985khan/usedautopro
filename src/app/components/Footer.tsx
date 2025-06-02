@@ -24,7 +24,7 @@ const Footer: React.FC = () => (
       </div>
       <div>
         
-        <div className="mb-2">Email: <a href="mailto:sales@recyledautoparts.com" className="underline">sales@usedautoparts.pro</a></div>
+        <div className="mb-2">Email: <a href="mailto:sales@recyledautoparts.com" className="underline">sales@recyledautoparts.com</a></div>
         <div className="flex space-x-2 mt-2">
           <a href="#" aria-label="Facebook"><FaFacebookF className="w-6 h-6 text-white hover:text-red-500" /></a>
           <a href="#" aria-label="Instagram"><FaInstagram className="w-6 h-6 text-white hover:text-red-500" /></a>

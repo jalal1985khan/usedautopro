@@ -57,7 +57,7 @@ const RefundPolicy = () => {
             <section className="mb-6">
               <h2 className="text-xl font-semibold mb-3 text-gray-900">Contact Us</h2>
               <p className="mb-4 text-gray-900">
-                If you have any questions about our refund policy or need assistance with a return, please contact us at sales@usedautoparts.pro
+                If you have any questions about our refund policy or need assistance with a return, please contact us at sales@recyledautoparts.com
               </p>
             </section>
           </div>
