@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Recyled Auto Parts",
-  description: "Recyled Auto Parts",
+  title: "Recycled Auto Parts",
+  description: "Recycled Auto Parts",
 };
 
 export default function RootLayout({
@@ -25,14 +25,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
-<script src="https://analytics-new.vercel.app/analytics-tracker.js" async/>
-</head>
-
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        <script
+          src="https://analytics-new.vercel.app/analytics-tracker.js"
+          async
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-9KRBPKL1LH"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9KRBPKL1LH');
+            `,
+          }}
+        />
+      </head>
+      <body className="antialiased">
         {children}
         <SpeedInsights />
         <Analytics />
