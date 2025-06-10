@@ -31,24 +31,27 @@ export default function RootLayout({
           src="https://analytics-new.vercel.app/analytics-tracker.js"
           async
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9KRBPKL1LH"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9KRBPKL1LH');
-            `,
-          }}
-        />
 
 {/* <!-- Google tag (gtag.js) --> */}
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17145464552">
-</script>
+        </script>
+        
+        {/* <!-- Google tag (gtag.js) --> */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17155724755"></script>
+<script
+          dangerouslySetInnerHTML={{
+            __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17155724755');
+`,
+          }}
+        />
+
+
+
 <script
           dangerouslySetInnerHTML={{
             __html: `
