@@ -1,17 +1,15 @@
 'use client'
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { useRouter } from 'next/navigation';
 
 const FindPartForm: React.FC = () => {
   const [state, handleSubmit] = useForm("mzzrnnkv");
+  const router = useRouter();
 
   if (state.succeeded) {
-    return (
-      <div className="bg-white p-6 rounded shadow-md w-full max-w-md mx-auto">
-        <h2 className="text-xl font-bold mb-4 text-center">Thank You!</h2>
-        <p className="text-center">We&apos;ll get back to you shortly about your part request.</p>
-      </div>
-    );
+    router.push('/thank-you');
+    return null;
   }
 
   return (
