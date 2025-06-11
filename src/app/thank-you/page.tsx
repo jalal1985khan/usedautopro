@@ -8,7 +8,21 @@ import Footer from '@/app/components/Footer';
 export default function ThankYouPage() {
   return (
     <>
-      <Header />
+      
+      <Header />  
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17155724755"></script>
+      <script
+        dangerouslySetInnerHTML={{
+            __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17155724755');
+  `,
+          }}
+/>
+
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
