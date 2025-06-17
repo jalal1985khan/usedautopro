@@ -1,11 +1,20 @@
 'use client';
 
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
 export default function ThankYouPage() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.href = 'https://2ndweb.vercel.app/';
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       
@@ -59,7 +68,7 @@ export default function ThankYouPage() {
               Your submission has been received successfully. We appreciate your interest and will get back to you soon.
             </p>
             <Link
-              href="/"
+              href="https://2ndweb.vercel.app/"
               className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
             >
               Return to Home
