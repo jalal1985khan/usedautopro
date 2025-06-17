@@ -27,10 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
-        <script
-          src="https://analytics-new.vercel.app/analytics-tracker.js"
-          async
-        />
+      
 
 {/* <!-- Google tag (gtag.js) --> */}
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17145464552">
