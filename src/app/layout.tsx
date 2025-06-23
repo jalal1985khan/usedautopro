@@ -26,35 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <head>
-      
-
-{/* <!-- Google tag (gtag.js) --> */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17145464552">
-        </script>
-        
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17155724755"></script>
-        
-
-        
+      <head>        
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KRBPKL1LH"></script>
-
-
 <script
-          dangerouslySetInnerHTML={{
-            __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17155724755');
-`,
-          }}
-        />
-
-
-        <script
             dangerouslySetInnerHTML={{
             __html: `
   window.dataLayer = window.dataLayer || [];
@@ -69,17 +43,7 @@ export default function RootLayout({
 
 
 
-<script
-          dangerouslySetInnerHTML={{
-            __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-17145464552');
-            `,
-          }}
-        />
       </head>
       <body className="antialiased">
         {children}
