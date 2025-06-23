@@ -54,7 +54,7 @@ export default function RootLayout({
         />
 
 
-        <script>
+        <script
             dangerouslySetInnerHTML={{
             __html: `
   window.dataLayer = window.dataLayer || [];
@@ -65,7 +65,8 @@ export default function RootLayout({
 
   `,
           }}
-</script>
+        />
+
 
 
 <script
